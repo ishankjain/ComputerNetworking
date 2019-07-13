@@ -1,0 +1,28 @@
+Pcap file header
+	40 bytes:faltu
+Ethernet header:
+	48-destination ethernet	
+	48-source ethernet
+	16-type ipv4
+Ip header:
+	4: ip version
+	4: no. of words(x) of 32 bits ie 4 bytes(internet header length=x*4 bytes)(generally x is 5 ie internet header length is 20 bytes)
+	8:
+	16:total length
+	16: identification
+	16:flags-don't fragment
+	8:time to live
+	8:protocol
+	16:checksum
+	32:ip source
+	32:ip destination
+TCP header:
+	16:source port
+	16:destination port
+	32:sequence number
+	32:acknowledge no.
+	16: TCP flags
+	16: window size value
+HTTP header:
+Data:
+Trailor:
